@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 	printf("x = %lx\n", f.x);
 	if (f.x == (unsigned long)0xdeadbabebeefc0deUL) {
 		printf("launching shell...\n");
-		system("cat ../../flag/x32_localoverflow_flag");
+		system("cat /flag/x86_01_flag");
 	}
 
 	return EXIT_SUCCESS;
