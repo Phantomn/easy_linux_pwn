@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
 	struct frame f;
 	memset(&f, 0, sizeof(f));
 
-	puts("> ");
+	printf("> ");
 	fflush(stdout);
 
 	read(STDIN_FILENO, &f.buffer[0], 256);
@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
 	printf("x = %lx\n", f.x);
 	if (f.x == (unsigned long)0xdeadbabebeefc0deUL) {
 		printf("launching shell...\n");
-		system("cat /flag/x86_01_flag");
+		system("/bin/sh");
 	}
 
 	return EXIT_SUCCESS;

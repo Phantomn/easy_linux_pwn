@@ -17,9 +17,9 @@ build_one () {
 	aarch64-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/arm64/$PROG
 	mips-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/mips/$PROG
 	mips64-linux-gnuabi64-gcc $CFLAGS src/$PROG.c -o bin/mips64/$PROG
-#	powerpc-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/ppc/$PROG
-#	powerpc64-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/ppc64/$PROG
-#	sparc64-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/sparc64/$PROG
+	powerpc-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/ppc/$PROG
+	powerpc64-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/ppc64/$PROG
+	sparc64-linux-gnu-gcc $CFLAGS src/$PROG.c -o bin/sparc64/$PROG
 }
 
 mkdir -p ./bin

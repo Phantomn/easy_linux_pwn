@@ -4,7 +4,7 @@
 
 void not_called() {
 	printf("launching shell...\n");
-	system("cat /flag/x86_overwrite_ret_flag");
+	system("/bin/sh");
 }
 
 int vulnerable() {
